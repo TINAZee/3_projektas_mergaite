@@ -1,66 +1,79 @@
 body {
     background-color:#F8F8F8;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-    main {
-        display:inline-block;
-        width:1300px ;
-        }
-        #navigation {
-            width: 100%;
-            height: 40px;
-            background-color:#F8F8F8;
+    
+    header{
+            display: inline-block;
+            width: 1000px;
+            margin-left:calc( (100% - 1000px) / 2 );
             }
-         #logo {
+        header>img {
             float: left;
+            /* jokio atsitraukimo tarpo */
             margin:0;
-            padding : 0
+    
             }
-          #menu{
+        nav{
+            display: inline-block;
             float: right;
-            text-align: right;
+            margin-top:20px;
+
             }
-         #menu a{
-            color:grey;
-            text-decoration:none;
-            padding-left: 10px;
+            a{
+                /* tarpeliai tarp zodziu */
+                padding: 10px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #9E9E9E;
+                font-size:10;
+                font-style:bold;
+                /* kad nebutu pabraukimo */
+                text-decoration:none;
+
             }
-         #menu button{
-            color:grey;
-            text-decoration:none;
-            padding-left: 10px;
+            /* jeigu tik paskutinis is saraso kitoks reikia taip rasyti */
+            a:last-of-type{
+                border: 3px solid #9E9E9E;
+                border-radius: 50px;
+                /*Kad nereiktu rasyti taip:
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                Rasau taip kaip apacioje, pagal laikrodzio rodykle
+                 */
+                padding: 0px 20px 0px 20px;
             }
-        #content{
-            width: 100%;
-            height: 600px;
-            display: block;
-            background-color:#F8F8F8;
-            text-align: center;
+         
+    #main{
+        display: inline-block;
+        width: 1000px;
+        margin-left: calc( (100% - 1000px) / 2 );
             }
             #note{
-                width: 50%;
-                height: 100px; 
                 display: inline-block;
+                /* nes tarpelis su paveiksliuku yra, tai todel ne 50 */
+                width: 40%;
                 float: left;
+                margin-top: 100px;
             }
                 h1{
-                width: 50%; 
-                display: inline-block;
-                font-size: 10px;
+                
+                font-size: 100px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-variant-numeric: slashed-zero;
                 color: #9E9E9E;
-                margin:0;
+                margin-bottom: 0;
                 }
                 p{
-                width: 50%; 
-                display: inline-block;
-                font-size: 10px;
+                
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 color: #9E9E9E;
-                margin:0;
+                margin-top: 0;
             }
-                img{
+            /* reikia nurodyti, kad paveiksliukas butent pat tevui priklauso */
+                main>img{
                 width: 47%; 
                 display: inline-block;
                 float: left;
+                
                 }
