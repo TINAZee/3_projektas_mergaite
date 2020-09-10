@@ -20,20 +20,33 @@ body {
 
             }
             a{
+                display:inline-block;
+                float:left;
                 /* tarpeliai tarp zodziu */
-                padding: 10px;
+                padding: 5px;
+                padding-right: 20px;
+                padding-left: 20px;
+                margin-left:10px;
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 color: #9E9E9E;
-                font-size:10;
+                font-size:18px;
                 font-style:bold;
                 /* kad nebutu pabraukimo */
                 text-decoration:none;
+                /* kad uzejus rankyte atsirastu */
+                cursor: pointer;
+                border: 3px solid transparent;
 
             }
+            /* kad tarpo nebutu, bet jo nereikia, kad nekliudyto logotipo */
+            /* a:first-of-type{
+                margin-left:0;
+            } */
             /* jeigu tik paskutinis is saraso kitoks reikia taip rasyti */
             a:last-of-type{
-                border: 3px solid #9E9E9E;
-                border-radius: 50px;
+                /* borderio paramentrai: dydis,tipas,spalva */
+                /* tipai stadionas arba kiausinis */
+                border-radius: 21px;
                 /*Kad nereiktu rasyti taip:
                 padding-left: 50px;
                 padding-right: 50px;
@@ -41,7 +54,9 @@ body {
                 padding-bottom: 0px;
                 Rasau taip kaip apacioje, pagal laikrodzio rodykle
                  */
-                padding: 0px 20px 0px 20px;
+                /* padding: 0px 20px 0px 20px; */
+                border-color: #9E9E9E;
+                text-transform: uppercase;
             }
          
     #main{
@@ -55,19 +70,19 @@ body {
                 width: 40%;
                 float: left;
                 margin-top: 100px;
+                color: #9E9E9E;
             }
                 h1{
                 
-                font-size: 100px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 120px;
+                font-family:monospace;
                 font-variant-numeric: slashed-zero;
-                color: #9E9E9E;
                 margin-bottom: 0;
                 }
                 p{
+                font-size:30px;
+                font-family:monospace;
                 
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color: #9E9E9E;
                 margin-top: 0;
             }
             /* reikia nurodyti, kad paveiksliukas butent pat tevui priklauso */
